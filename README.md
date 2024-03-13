@@ -4,6 +4,8 @@
 
 This is a test for UI Automation Web based for ubank homepage.
 
+Git repo - [u-test](https://github.com/summernine/u-test)
+
 
 ## Setup
 
