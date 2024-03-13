@@ -1,0 +1,25 @@
+{
+  "name": "ubank-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "homepage": "npx playwright test homepage.spec.ts",
+    "loginpage": "npx playwright test loginpage.spec.ts",
+    "test": "npx playwright test",
+    "test:report": "npm run test && npx playwright show-report",
+    "clean:results": "rm -r allure-results/*.*",
+    "test:generate-allure-report": "npx allure generate ./allure-results --clean",
+    "test:open-allure-report": "npx allure open ./allure-report",
+    "test:allure-report": "npm run test && npm run test:generate-allure-report && npm run test:open-allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.26",
+    "allure-commandline": "^2.27.0",
+    "allure-playwright": "^2.14.1"
+  }
+}
